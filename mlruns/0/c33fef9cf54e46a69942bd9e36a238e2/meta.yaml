@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nani/Desktop/live_project/liveproject/end_to-end_ml_proj/mlruns/0/c33fef9cf54e46a69942bd9e36a238e2/artifacts
+end_time: 1706801801090
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c33fef9cf54e46a69942bd9e36a238e2
+run_name: clean-mink-502
+run_uuid: c33fef9cf54e46a69942bd9e36a238e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706801798272
+status: 3
+tags: []
+user_id: nani
