@@ -1,1 +1,13 @@
-"key" : "value"
+# model_params
+ElasticNet:
+  alpha: 0.1
+  l1_ratio: 0.5
+
+# data_params:
+#   train_file_path: "path/to/train_data.csv"
+#   test_file_path: "path/to/test_data.csv"
+#   target_column: "target"
+
+# training_params:
+#   random_state: 42
+#   test_size: 0.2
