@@ -1,14 +1,13 @@
 from mlproject_0_1.config.configuration import ConfigurationManager
-from mlproject_0_1.components.data_transformation import DataTransformation
+from mlproject_0_1.components.model_trainer import ModelTrainer
 from mlproject_0_1 import logger
 from pathlib import Path
 
 
 
+STAGE_NAME = "Model Training stage"
 
-STAGE_NAME = "Data Transformation stage"
-
-class DataTransformationTrainingPipeline:
+class ModelTrainingPipeline:
     def __init__(self):
         pass
 
@@ -20,9 +19,9 @@ class DataTransformationTrainingPipeline:
 
             if status == "True":
                 config = ConfigurationManager()
-                data_transformation_config = config.get_data_transformation_config()
-                data_transformation = DataTransformation(config=data_transformation_config)
-                data_transformation.train_test_spliting()
+                model_trainer_config = config.get_model_trainer_config()
+                model_trainer_config = ModelTrainer(config=model_trainer_config)
+                model_trainer_config.train()
 
             else:
                 raise Exception("You data schema is not valid")
@@ -35,7 +34,7 @@ class DataTransformationTrainingPipeline:
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = DataTransformationTrainingPipeline()
+        obj = ModelTrainingPipeline()
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
