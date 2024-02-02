@@ -8,7 +8,10 @@ class PredictionPipeline:
     def __init__(self):
         self.model = joblib.load(Path("artifacts/model_trainer/model.joblib"))
 
-    def Predict(self,data):
-        prediction = self.model.Predict(data)
+    def predict(self,data):
+        prediction = self.model.predict(data)
+
+
+        return prediction
 
 

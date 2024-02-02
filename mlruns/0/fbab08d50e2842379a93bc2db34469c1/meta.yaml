@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nani/Desktop/live_project/liveproject/end_to-end_ml_proj/mlruns/0/fbab08d50e2842379a93bc2db34469c1/artifacts
+end_time: 1706858720725
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fbab08d50e2842379a93bc2db34469c1
+run_name: silent-dog-385
+run_uuid: fbab08d50e2842379a93bc2db34469c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706858717515
+status: 3
+tags: []
+user_id: nani
