@@ -1,0 +1,14 @@
+import joblib
+import numpy as np
+import pandas as pa
+from pathlib import Path
+
+
+class PredictionPipeline:
+    def __init__(self):
+        self.model = joblib.load(Path("artifacts/model_trainer/model.joblib"))
+
+    def Predict(self,data):
+        prediction = self.model.Predict(data)
+
+
